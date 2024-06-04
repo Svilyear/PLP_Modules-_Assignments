@@ -1,0 +1,16 @@
+#savings = float(input("Enter your savings amount: "))
+#time =  float(input("Enter your savings Duration: "))
+# Calculate the end amount with 10% interest.
+#end_amount = savings *   (1 + 0.05) ** time
+
+# Display the end amount on the screen.
+#print("Your end amount is:", end_amount)
+savings = float(input("Enter the amount you want to save: "))
+time = float(input("Enter the time period (in years): "))
+interest_rate = float(input("Enter the interest rate (in decimal): "))
+
+# Calculate the compound interest
+amount = savings * (1 + interest_rate) ** time
+
+# Display the result
+print("The amount after", time, "years with compound interest is:", amount)

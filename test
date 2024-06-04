@@ -1,0 +1,24 @@
+savings = input("Enter Amount you wish to save : ")
+time = input ("Enter Duration for savings (years) : " )
+
+# Convert the user input into a float value and update the variable
+savings = int(savings)
+time = float(time)
+
+# Savings grow after 1 year at a 5% annual interest rate
+balance = savings  * 1.05 ** time
+#interest = balance - savings
+amount = balance - savings
+
+# Convert the values into a string and update the variable
+balance = str(balance)
+amount = str (amount)
+#interest = str(interest)
+
+
+
+# Concatenate the 2 strings to produce a message
+#message = "Amount in {time}  year: " + {amount + interest}
+print(f"Amount in {time}  year(s) is : " , end= "")
+print(balance)
+
